@@ -1,15 +1,14 @@
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-+# Inherit some common OMNI stuff.
-+$(call inherit-product, vendor/omni/config/gsm.mk)
-+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-+$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/asus/Z00A/device.mk)
-
-$(call inherit-product, vendor/omni/config/common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/Z00A/overlay
 
@@ -21,7 +20,6 @@ PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_Z00A
 PRODUCT_MANUFACTURER := asus
 PRODUCT_DEVICE := Z00A
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=WW_Z00A \
     BUILD_FINGERPRINT=asus/WW_Z00A/Z00A:6.0.1/MMB29P/4.21.40.134_20160825_4746_user:user/release-keys \

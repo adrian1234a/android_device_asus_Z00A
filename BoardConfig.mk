@@ -51,4 +51,4 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 TARGET_KERNEL_SOURCE := kernel/asus/moorefield
 TARGET_KERNEL_ARCH := x86_64
 BOARD_KERNEL_IMAGE_NAME := bzImage
-TARGET_KERNEL_CONFIG := lineage_zenfone2_defconfig
+TARGET_KERNEL_CONFIG := zenfone2_defconfig
